@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monica Kandela | Recruiter View</title>
+<meta name="description" content="Plain, skimmable resume view for Monica Kandela, Data / Business Analyst.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<script>
+  try { var t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<style>
+:root{--bg:#fbf6ef;--paper:#fff;--ink:#1d1a2f;--muted:#5f5a75;--line:#e6dccd;--a:#7c5cff;--b:#ff6b9d;--head:'Electric Typewriter','Audiowide','Space Grotesk',sans-serif}
+:root[data-theme="dark"]{--bg:#0c0a1d;--paper:#14112b;--ink:#f1edff;--muted:#a49fc4;--line:#2a2548;--a:#9d86ff;--b:#ff7eb0}
+@font-face{font-family:'Electric Typewriter';src:local('Electric Typewriter'),url('../assets/fonts/ElectricTypewriter.woff2') format('woff2');font-display:swap}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:24px 16px 60px}
+a{color:inherit}
+ul{list-style:none}
+.bar{max-width:860px;margin:0 auto 18px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.bar .sp{flex:1}
+.pill,.bar a,.bar button{font:600 .9rem 'Space Grotesk',sans-serif;padding:10px 18px;border-radius:99px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;text-decoration:none}
+.bar a.dl{background:linear-gradient(120deg,var(--a),var(--b));color:#fff;border-color:transparent}
+.bar a:hover,.bar button:hover{border-color:var(--a)}
+.page{max-width:860px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:clamp(22px,5vw,52px)}
+h1{font-family:var(--head);font-weight:400;font-size:clamp(2rem,6vw,3rem);line-height:1.1}
+.title{color:var(--a);font-weight:500;font-size:1.1rem;margin:4px 0 8px}
+.contact{display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--muted);font-size:.95rem;padding-bottom:18px;border-bottom:2px solid var(--ink)}
+.contact a{text-decoration:none;border-bottom:1px dotted var(--muted)}
+h2{font-family:var(--head);font-weight:400;font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+p.sum{color:var(--muted)}
+.skills li{margin-bottom:4px}.skills b{color:var(--ink)}.skills{color:var(--muted)}
+.job{margin-bottom:16px}
+.row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 16px}
+.row strong{font-size:1.02rem}
+.row span{color:var(--muted);font-size:.9rem;white-space:nowrap}
+.org{color:var(--a);font-weight:500;font-size:.95rem}
+.job ul{margin-top:6px;color:var(--muted)}
+.job li{position:relative;padding-left:18px;margin-bottom:4px}
+.job li::before{content:"•";position:absolute;left:4px;color:var(--b)}
+.job li b{color:var(--ink)}
+@media print{body{background:#fff;color:#000;padding:0}.bar{display:none}.page{border:0;border-radius:0;padding:0;background:#fff;color:#000}.contact,p.sum,.skills,.job ul,.row span{color:#222}}
+</style>
+</head>
+<body>
+<nav class="bar" aria-label="Page actions">
+  <a href="../">← Full portfolio</a>
+  <span class="sp"></span>
+  <button type="button" onclick="window.print()">Print</button>
+  <a class="dl" href="../assets/MonicaKandela_FinalResume.pdf" download="MonicaKandela_FinalResume.pdf">Download PDF ↓</a>
+</nav>
+
+<main class="page">
+  <h1>Monica Kandela</h1>
+  <p class="title">Data Analyst Associate · Open to Data Analyst / Business Analyst roles</p>
+  <p class="contact">
+    <span>Arlington, VA</span>
+    <a href="mailto:kandelamonica@gmail.com">kandelamonica@gmail.com</a>
+    <a href="https://www.linkedin.com/in/monica-kandela" target="_blank" rel="noopener">linkedin.com/in/monica-kandela</a>
+    <span>U.S. Citizen</span>
+  </p>
+
+  <h2>Professional Summary</h2>
+  <p class="sum">Information Technology graduate with strong analytical and strategic problem-solving skills and hands-on experience turning data into business impact. Proficient in SQL and Python, skilled at developing hypotheses, exploring structured and unstructured data, and translating findings into recommendations that drive business strategy and measurable outcomes. A curious, collaborative self-starter eager to grow into an analytical leadership role.</p>
+
+  <h2>Technical Skills</h2>
+  <ul class="skills">
+    <li><b>Languages &amp; Querying:</b> SQL, Python (pandas, NumPy), JavaScript</li>
+    <li><b>Data &amp; Analytics:</b> Excel, Tableau, Power BI, KPI reporting, ETL pipelines, data mining, statistical analysis, test plan design &amp; UAT</li>
+    <li><b>Cloud &amp; Tools:</b> Azure/Databricks (foundational), AWS (in progress), PostgreSQL, Git/GitHub, CRM (Mindbody, Zoho)</li>
+    <li><b>AI &amp; LLM Tools:</b> ChatGPT, Claude, Gemini, Microsoft Copilot, GitHub Copilot; prompt engineering, output validation; Anthropic AI Fluency certificate</li>
+    <li><b>Office Tools:</b> Microsoft Office (Outlook, Teams, SharePoint, Excel, Word, PowerPoint), Google Workspace</li>
+  </ul>
+
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="row"><strong>Data Operations &amp; Analytics Associate</strong><span>Oct 2024 – May 2025</span></div>
+    <p class="org">SWTHZ Therapy Studio · Arlington, VA</p>
+    <ul>
+      <li>Drove a recommendation that informed membership strategy by exploring customer engagement and transaction data to identify trends and behavioral patterns, uncovering a <b>15% revenue growth opportunity</b>.</li>
+      <li>Built customer engagement, membership, and transaction dashboards in Mindbody CRM to monitor recurring KPIs in real time and support data-driven decisions.</li>
+      <li>Identified recurring patterns of anomalous account, payment and scheduling activity across CRM datasets, resolving discrepancies to improve data integrity.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="row"><strong>Software Engineer Intern</strong><span>May 2025 – Aug 2025</span></div>
+    <p class="org">GBCS Group · Remote</p>
+    <ul>
+      <li>Built an internal web portal using React within a cross-functional Agile team, accelerating feature delivery by <b>30%</b> through reusable components and structured code reviews.</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="job">
+    <div class="row"><strong>Operational Data &amp; Inventory Analytics Platform (Capstone)</strong><span>Aug 2025 – May 2026</span></div>
+    <p class="org">Hans Greens Microgreens</p>
+    <ul>
+      <li>Served as a key contributor on a five-person team, developing hypotheses about operational inefficiencies and building an analytical framework using a relational SQL schema and Python to test them.</li>
+      <li>Built an ETL pipeline to integrate data from multiple sources and platforms, cleaning and reconciling raw data to enable data-driven decisions.</li>
+      <li>Wrote analytical queries to evaluate operational metrics and translated technical findings into clear recommendations for the client.</li>
+      <li>Designed and executed a multi-phase test plan (alpha, beta, user acceptance) covering <b>57 functional and non-functional test cases</b>, achieving a <b>100% pass rate</b>.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="row"><strong>Data Visualization &amp; Business Insights Simulation (Forage)</strong><span>Jan 2026</span></div>
+    <p class="org">Tata Insights &amp; Quants</p>
+    <ul>
+      <li>Analyzed a business dataset to identify trends and KPIs, built interactive dashboards, and presented data-backed recommendations clearly to non-technical audiences.</li>
+    </ul>
+  </div>
+
+  <h2>Education &amp; Leadership</h2>
+  <div class="job">
+    <div class="row"><strong>B.S. Information Technology, Concentration in Web Development</strong><span>May 2026</span></div>
+    <p class="org">George Mason University · Fairfax, VA</p>
+    <ul>
+      <li><b>Relevant coursework:</b> Statistical Analysis, Advanced Data Modeling, Relational Database Design, SQL Programming, Python</li>
+      <li><b>Leadership:</b> Rewriting the Code (RTC), Harvard WeCode '25 Conference, Society of Women Engineers (SWE)</li>
+    </ul>
+  </div>
+</main>
+</body>
+</html>

@@ -3,6 +3,7 @@
   --a:#7c5cff; --b:#ff6b9d; --c:#12c2a5; --d:#ffb454;
   --card:rgba(255,255,255,.72); --shadow:0 20px 50px -20px rgba(80,50,160,.28);
   --side:268px; --r:22px;
+  --head:'Electric Typewriter','Audiowide','Space Grotesk',sans-serif;
 }
 :root[data-theme="dark"]{
   --bg:#0c0a1d; --bg2:#14112b; --ink:#f1edff; --muted:#a49fc4; --line:#2a2548;
@@ -58,7 +59,7 @@ main{margin-left:var(--side);padding:0 clamp(20px,5vw,72px)}
 /* hero */
 .hero{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:60px 0}
 .badge{display:inline-flex;align-items:center;gap:10px;padding:7px 16px;border-radius:99px;background:var(--card);border:1px solid var(--line);font:400 .78rem 'JetBrains Mono',monospace;margin-bottom:22px}
-.pulse{width:9px;height:9px;border-radius:50%;background:var(--c);box-shadow:0 0 0 0 var(--c);animation:pulse 2s infinite}
+.pulse{flex:none;width:9px;height:9px;border-radius:50%;background:var(--c);box-shadow:0 0 0 0 var(--c);animation:pulse 2s infinite}
 @keyframes pulse{70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
 h1{line-height:1;margin-bottom:14px}
 .hi{display:block;font-size:clamp(1.4rem,2.4vw,2rem);font-weight:500;color:var(--muted);margin-bottom:6px}
@@ -208,4 +209,14 @@ footer .script{font-size:1.4rem;color:var(--b)}
   .glow{display:none}
 }
 @media (max-width:480px){.stats{grid-template-columns:1fr}.chip{font-size:.72rem;padding:6px 11px}}
+/* heading font */
+@font-face{font-family:'Electric Typewriter';src:local('Electric Typewriter'),local('ElectricTypewriter-Regular'),url('../assets/fonts/ElectricTypewriter.woff2') format('woff2');font-display:swap}
+h2,h3,.stats b,.metric b,.recruiter-btn,.nav a{font-family:var(--head);font-weight:400;letter-spacing:.02em}
+h2{letter-spacing:.03em}
+h2 em{font-style:normal;background:linear-gradient(100deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.badge{text-transform:uppercase;letter-spacing:.12em;font-size:.72rem}
+.recruiter-btn{display:flex;justify-content:space-between;padding:12px 16px;border-radius:14px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);transition:.25s}
+.recruiter-btn:hover{transform:translateY(-3px);box-shadow:0 12px 24px -10px var(--ink)}
+.recruiter-btn span{transition:.25s}.recruiter-btn:hover span{transform:translateX(4px)}
+
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
