@@ -7,7 +7,7 @@
 <meta name="description" content="Plain, skimmable resume view for Monica Kandela, Data / Business Analyst.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=JetBrains+Mono&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <script>
   try { var t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); document.documentElement.dataset.theme = t; } catch (e) {}
 </script>
@@ -41,7 +41,13 @@ p.sum{color:var(--muted)}
 .job li{position:relative;padding-left:18px;margin-bottom:4px}
 .job li::before{content:"•";position:absolute;left:4px;color:var(--b)}
 .job li b{color:var(--ink)}
-@media print{body{background:#fff;color:#000;padding:0}.bar{display:none}.page{border:0;border-radius:0;padding:0;background:#fff;color:#000}.contact,p.sum,.skills,.job ul,.row span{color:#222}}
+@media print{body{background:#fff;color:#000;padding:0}.bar,.full{display:none}.page{border:0;border-radius:0;padding:0;background:#fff;color:#000}.contact,p.sum,.skills,.job ul,.row span{color:#222}}
+.open{display:flex;align-items:center;gap:10px;font:400 .72rem 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--b);margin-bottom:10px}
+.open i{width:8px;height:8px;border-radius:50%;background:var(--b);flex:none}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:14px}
+.full{font-weight:700;padding:12px 22px;border-radius:99px;background:var(--ink);color:var(--paper);text-decoration:none;transition:.25s}
+.full:hover{transform:translateY(-2px)}
+.row span{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.8rem}
 </style>
 </head>
 <body>
@@ -49,14 +55,19 @@ p.sum{color:var(--muted)}
   <a href="../">← Full portfolio</a>
   <span class="sp"></span>
   <button type="button" onclick="window.print()">Print</button>
-  <a class="dl" href="../assets/MonicaKandela_FinalResume.pdf" download="MonicaKandela_FinalResume.pdf">Download PDF ↓</a>
+  <a class="dl" href="../assets/Monica_Kandela_DataAnalyst_Resume.pdf" download="Monica_Kandela_DataAnalyst_Resume.pdf">Download PDF ↓</a>
 </nav>
 
 <main class="page">
-  <h1>Monica Kandela</h1>
-  <p class="title">Data Analyst Associate · Open to Data Analyst / Business Analyst roles</p>
+  <p class="open"><i></i>Open to Data Analyst / Business Analyst roles</p>
+  <header class="head">
+    <div>
+      <h1>Monica Kandela</h1>
+      <p class="title">Data Analyst Associate · Arlington, VA</p>
+    </div>
+    <a class="full" href="../">Open the full experience</a>
+  </header>
   <p class="contact">
-    <span>Arlington, VA</span>
     <a href="mailto:kandelamonica@gmail.com">kandelamonica@gmail.com</a>
     <a href="https://www.linkedin.com/in/monica-kandela" target="_blank" rel="noopener">linkedin.com/in/monica-kandela</a>
     <span>U.S. Citizen</span>
